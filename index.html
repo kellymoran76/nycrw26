@@ -161,6 +161,46 @@
   .popup-link.listing { background: #f0f0f0; color: #333; }
   .popup-link.menu { background: #d1fae5; color: #065f46; }
   .leaflet-popup-content { min-width: 240px; max-width: 280px; }
+ /* Mobile Layout */
+@media (max-width: 768px) {
+
+  body {
+    flex-direction: column;
+    height: 100dvh;
+  }
+
+  #sidebar {
+    width: 100%;
+    min-width: 100%;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  #filters {
+    max-height: 150px;
+  }
+
+  #map {
+    height: 60vh;
+    flex: none;
+  }
+
+  .leaflet-popup-content {
+    min-width: 220px;
+    max-width: 260px;
+    font-size: 14px;
+  }
+
+  .pill {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .filter-select {
+    font-size: 16px;
+  }
+}
 </style>
 </head>
 <body>
